@@ -1,0 +1,31 @@
+create database scores_database;
+
+use scores_database;
+
+
+create table admin (
+username varchar(50) PRIMARY KEY,
+password varchar(50) NOT NULL
+) 
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_unicode_ci
+;
+
+create table scores (
+id int PRIMARY KEY AUTO_INCREMENT,
+name varchar(50) NOT NULL,
+student_id varchar(50) NOT NULL,
+
+YU float,
+SHU float,
+WAI float,
+
+ZHENG float,
+SHI float,
+DI float,
+
+WU float,
+HUA float,
+SHENG float
+) 
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_unicode_ci
+;
